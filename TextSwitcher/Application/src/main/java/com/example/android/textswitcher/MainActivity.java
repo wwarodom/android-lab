@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.sample_main);
 
         // Get the TextSwitcher view from the layout
-        mSwitcher = (TextSwitcher) findViewById(R.id.switcher);
+        mSwitcher = findViewById(R.id.switcher);
 
         // BEGIN_INCLUDE(setup)
         // Set the factory used to create TextViews to switch between.
@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
          * the new value is displayed in the TextSwitcher. The change of text is
          * automatically animated using the in/out animations set above.
          */
-        Button nextButton = (Button) findViewById(R.id.button);
+        Button nextButton = findViewById(R.id.button);
         nextButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         ivLogo = findViewById(com.werapun.helloworld.R.id.ivLogo);
         ivLogo.setVisibility( View.INVISIBLE );
 
-        Toolbar toolbar = (Toolbar) findViewById(com.werapun.helloworld.R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(com.werapun.helloworld.R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
