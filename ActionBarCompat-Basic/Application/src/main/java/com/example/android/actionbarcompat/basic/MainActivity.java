@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
         locationItem.setIcon(R.drawable.ic_action_location);
 
         // Need to use MenuItemCompat methods to call any action item related methods
-        MenuItemCompat.setShowAsAction(locationItem, MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        //OHM EDIT DEPRECATE MenuItemCompat.setShowAsAction(locationItem, MenuItem.SHOW_AS_ACTION_IF_ROOM);
+        locationItem.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
         return true;
     }
